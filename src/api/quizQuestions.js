@@ -21,15 +21,15 @@ var quizQuestions = [
       answers: [
           {
               type: "wrong",
-              content: "Blade"
+              content: "Patch"
           },
           {
               type: "wrong",
-              content: "Stan"
+              content: "Logan"
           },
           {
               type: "correct",
-              content: "Logan"
+              content: "James"
           }
       ]
   },

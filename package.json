@@ -5,8 +5,10 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-addons-css-transition-group": "^15.6.2",
+    "react-addons-update": "^15.6.2",
     "react-bootstrap": "^0.31.5",
     "react-countdown-clock": "^2.0.0",
+    "react-countdown-clock-fork": "^1.10.1",
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17",
     "youtube-live-react": "^1.0.0"

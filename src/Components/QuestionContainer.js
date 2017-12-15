@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class QuestionContainer extends Component {
+  renderAnswerOptions(answer, idx) {
+    return <li key={idx} value={answer.type} onClick={this.props.onAnswerSelected}>{answer.content}</li>
+  }
+
   render(){
     return(
       <ReactCSSTransitionGroup
@@ -16,13 +20,11 @@ class QuestionContainer extends Component {
       <div>
 
         <div className="question">
-          <h4>What was Hulk’s original color?</h4>
+          <h4>{this.props.question}</h4>
         </div>
 
         <ul>
-          <li>Gray</li>
-          <li>Green</li>
-          <li>Purple</li>
+          {this.props.answerOptions.map((answers, idx) => this.renderAnswerOptions(answers, idx))}
         </ul>
       </div>
     </ReactCSSTransitionGroup>
